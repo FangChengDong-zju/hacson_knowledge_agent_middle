@@ -1,0 +1,494 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+<path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+</marker>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+<feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.16"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="1800" height="1120" fill="#f8fafc"/>
+<text x="40" y="52" font-size="30" font-weight="800" fill="#172033">医学教材多级关键词知识图谱</text>
+<text x="40" y="84" font-size="16" fill="#64748b">层级节点连接医学知识轴，术语节点合并跨教材重复概念；节点越大表示出现教材越多。</text>
+<circle cx="40" cy="124" r="7" fill="#172033"/>
+<text x="54" y="129" font-size="13" fill="#334155">知识层级 (26)</text>
+<circle cx="310" cy="124" r="7" fill="#2563eb"/>
+<text x="324" y="129" font-size="13" fill="#334155">传染病 (3)</text>
+<circle cx="580" cy="124" r="7" fill="#4f46e5"/>
+<text x="594" y="129" font-size="13" fill="#334155">器官系统 (10)</text>
+<circle cx="850" cy="124" r="7" fill="#7c3aed"/>
+<text x="864" y="129" font-size="13" fill="#334155">基础结构 (9)</text>
+<circle cx="40" cy="154" r="7" fill="#0891b2"/>
+<text x="54" y="159" font-size="13" fill="#334155">感染免疫 (10)</text>
+<circle cx="310" cy="154" r="7" fill="#64748b"/>
+<text x="324" y="159" font-size="13" fill="#334155">方法与评价 (3)</text>
+<circle cx="580" cy="154" r="7" fill="#0d9488"/>
+<text x="594" y="159" font-size="13" fill="#334155">生理指标 (1)</text>
+<circle cx="850" cy="154" r="7" fill="#059669"/>
+<text x="864" y="159" font-size="13" fill="#334155">生理机制 (11)</text>
+<circle cx="40" cy="184" r="7" fill="#be123c"/>
+<text x="54" y="189" font-size="13" fill="#334155">疾病总论 (1)</text>
+<circle cx="310" cy="184" r="7" fill="#ea580c"/>
+<text x="324" y="189" font-size="13" fill="#334155">病理生理 (1)</text>
+<circle cx="580" cy="184" r="7" fill="#dc2626"/>
+<text x="594" y="189" font-size="13" fill="#334155">病理过程 (14)</text>
+<g id="edges">
+<line x1="1282.9" y1="305.2" x2="1308.8" y2="317.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1308.8" y1="317.0" x2="1370.8" y2="408.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.8" y1="408.8" x2="1372.1" y2="437.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="559.4" y1="847.1" x2="737.0" y2="1012.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1221.6" y1="179.4" x2="559.0" y2="818.6" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="559.0" y1="818.6" x2="578.4" y2="900.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1241.0" y1="261.4" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="671.8" y1="960.2" x2="700.3" y2="960.7" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1203.8" y1="157.1" x2="618.4" y2="940.8" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1099.7" y1="119.3" x2="943.6" y2="931.8" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1156.0" y1="126.6" x2="728.3" y2="955.0" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1071.7" y1="125.0" x2="644.0" y2="953.4" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1240.6" y1="232.9" x2="596.2" y2="922.9" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1181.6" y1="139.2" x2="596.2" y2="922.9" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1282.9" y1="305.2" x2="522.7" y2="159.9" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="522.7" y1="159.9" x2="561.6" y2="220.1" stroke="#f59e0b" stroke-width="1.7" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+<line x1="561.6" y1="220.1" x2="558.4" y2="248.4" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="629.7" y1="132.8" x2="561.6" y2="220.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="558.4" y1="248.4" x2="585.9" y2="168.8" stroke="#f59e0b" stroke-width="1.7" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+<line x1="558.4" y1="248.4" x2="684.7" y2="118.8" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="605.8" y1="148.4" x2="500.7" y2="238.9" stroke="#f59e0b" stroke-width="1.7" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+<line x1="500.7" y1="238.9" x2="546.1" y2="125.9" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="713.2" y1="121.1" x2="546.1" y2="125.9" stroke="#f59e0b" stroke-width="1.7" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+<line x1="570.9" y1="193.1" x2="740.4" y2="129.6" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="656.4" y1="122.7" x2="618.4" y2="940.8" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1358.0" y2="710.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1358.0" y1="710.6" x2="1372.3" y2="655.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1358.0" y1="710.6" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1321.7" y2="754.2" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="558.4" y2="248.4" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1270.3" y2="778.2" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1342.3" y2="734.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1368.2" y2="683.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1342.3" y1="734.4" x2="1368.2" y2="683.9" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1297.4" y1="769.0" x2="1370.1" y2="627.2" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1347.7" y1="575.1" x2="856.4" y2="148.2" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="864.4" y2="139.4" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1347.7" y1="575.1" x2="874.1" y2="132.6" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1160.4" y2="854.4" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.46" marker-end="url(#arrow)"/>
+<line x1="1164.3" y1="843.2" x2="1165.6" y2="831.4" stroke="#f59e0b" stroke-width="1.7" stroke-opacity="0.58" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1342.3" y1="734.4" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1368.2" y1="683.9" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1342.3" y1="734.4" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="644.0" y1="953.4" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1308.8" y1="317.0" x2="1282.9" y2="305.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1368.2" y1="683.9" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1372.3" y2="655.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1347.7" y1="575.1" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1350.1" y1="356.0" x2="1308.8" y2="317.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1347.7" y1="575.1" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="700.3" y1="960.7" x2="644.0" y2="953.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1308.8" y1="317.0" x2="1350.1" y2="356.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="558.4" y1="248.4" x2="561.6" y2="220.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="561.6" y1="220.1" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1372.3" y2="655.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1331.6" y1="334.2" x2="1308.8" y2="317.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1342.3" y2="734.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1358.0" y1="710.6" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1358.0" y1="710.6" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1099.7" y1="119.3" x2="1128.2" y2="119.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="558.4" y1="248.4" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1308.8" y1="317.0" x2="1331.6" y2="334.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1308.8" y1="317.0" x2="1363.4" y2="381.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1350.1" y1="356.0" x2="1282.9" y2="305.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1331.6" y1="334.2" x2="1282.9" y2="305.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="644.0" y1="953.4" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1282.9" y1="305.2" x2="1350.1" y2="356.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1361.8" y1="599.9" x2="1368.2" y2="683.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="558.4" y1="248.4" x2="570.9" y2="193.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="700.3" y1="960.7" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1370.1" y1="627.2" x2="1358.0" y2="710.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1363.4" y1="381.2" x2="1308.8" y2="317.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1282.9" y1="305.2" x2="1363.4" y2="381.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1350.1" y1="356.0" x2="1331.6" y2="334.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="671.8" y1="960.2" x2="644.0" y2="953.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="644.0" y1="953.4" x2="618.4" y2="940.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1282.9" y1="305.2" x2="1331.6" y2="334.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="570.9" y1="193.1" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="618.4" y1="940.8" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="671.8" y1="960.2" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1358.0" y2="710.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1099.7" y1="119.3" x2="1071.7" y2="125.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1099.7" y1="119.3" x2="1156.0" y2="126.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1156.0" y1="126.6" x2="1099.7" y2="119.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="605.8" y1="148.4" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1321.7" y1="754.2" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1342.3" y1="734.4" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="559.4" y1="847.1" x2="644.0" y2="953.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1363.4" y1="381.2" x2="1282.9" y2="305.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="558.4" y1="248.4" x2="585.9" y2="168.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="644.0" y1="953.4" x2="728.3" y2="955.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="700.3" y1="960.7" x2="728.3" y2="955.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1331.6" y1="334.2" x2="1363.4" y2="381.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="559.4" y1="847.1" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="618.4" y1="940.8" x2="644.0" y2="953.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="559.4" y1="847.1" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1321.7" y1="754.2" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1156.0" y1="126.6" x2="1071.7" y2="125.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="585.9" y1="168.8" x2="561.6" y2="220.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="561.6" y1="220.1" x2="605.8" y2="148.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="561.6" y1="220.1" x2="570.9" y2="193.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="605.8" y1="148.4" x2="561.6" y2="220.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="728.3" y1="955.0" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="585.9" y1="168.8" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="644.0" y1="953.4" x2="559.4" y2="847.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1350.1" y1="356.0" x2="1363.4" y2="381.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1071.7" y1="125.0" x2="1099.7" y2="119.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1331.6" y1="334.2" x2="1350.1" y2="356.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1368.2" y1="683.9" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1221.6" y1="179.4" x2="1099.7" y2="119.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="570.9" y1="193.1" x2="561.6" y2="220.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1099.7" y1="119.3" x2="1181.6" y2="139.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1363.4" y1="381.2" x2="1350.1" y2="356.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1372.3" y1="655.7" x2="1342.3" y2="734.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1368.2" y1="683.9" x2="1342.3" y2="734.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1368.2" y1="683.9" x2="1358.0" y2="710.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="618.4" y1="940.8" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="596.2" y1="922.9" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="578.4" y1="900.6" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1071.7" y1="125.0" x2="1128.2" y2="119.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="596.2" y1="922.9" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="700.3" y1="960.7" x2="559.4" y2="847.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="700.3" y1="960.7" x2="618.4" y2="940.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="671.8" y1="960.2" x2="559.4" y2="847.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1347.7" y1="575.1" x2="1368.2" y2="683.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="561.6" y1="220.1" x2="585.9" y2="168.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="861.0" y1="621.1" x2="825.4" y2="695.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="825.4" y1="695.0" x2="789.8" y2="768.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1361.8" y2="599.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1370.1" y2="627.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1358.0" y2="710.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1347.7" y2="575.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1372.3" y2="655.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="939.0" y1="621.1" x2="974.6" y2="695.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="974.6" y1="695.0" x2="1010.2" y2="768.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1099.7" y2="119.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1368.2" y2="683.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1156.0" y2="126.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1342.3" y2="734.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1071.7" y2="125.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1128.2" y2="119.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1181.6" y2="139.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="939.0" y1="621.1" x2="974.6" y2="695.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="974.6" y1="695.0" x2="1010.2" y2="768.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1282.9" y2="305.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="812.3" y1="560.0" x2="732.3" y2="578.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="732.3" y1="578.3" x2="652.4" y2="596.5" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="558.4" y2="248.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="939.0" y1="621.1" x2="974.6" y2="695.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="974.6" y1="695.0" x2="1010.2" y2="768.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="559.4" y2="847.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1308.8" y2="317.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="561.6" y2="220.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="570.9" y2="193.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="900.0" y1="450.0" x2="900.0" y2="368.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="900.0" y1="368.0" x2="900.0" y2="286.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="900.0" y1="286.0" x2="540.8" y2="702.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1331.6" y2="334.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="578.4" y2="900.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1363.4" y2="381.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="700.3" y2="960.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="671.8" y2="960.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="644.0" y2="953.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1350.1" y2="356.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="605.8" y2="148.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="629.7" y2="132.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1221.6" y2="179.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1234.1" y2="205.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="728.3" y2="955.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="618.4" y2="940.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1203.8" y2="157.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="713.2" y2="121.1" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="596.2" y2="922.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="585.9" y2="168.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1370.8" y2="408.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="656.4" y2="122.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="559.0" y2="818.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="565.9" y2="874.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1372.1" y2="437.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1321.7" y2="754.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="970.4" y1="483.9" x2="1034.5" y2="432.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1034.5" y1="432.8" x2="1098.6" y2="381.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1098.6" y1="381.6" x2="856.4" y2="148.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="684.7" y2="118.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1098.6" y1="381.6" x2="864.4" y2="139.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="737.0" y2="1012.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="829.6" y1="483.9" x2="765.5" y2="432.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="765.5" y1="432.8" x2="701.4" y2="381.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="701.4" y1="381.6" x2="513.9" y2="460.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="740.4" y2="129.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1367.1" y2="465.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="500.7" y2="238.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="546.1" y2="125.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="974.6" y1="695.0" x2="1010.2" y2="768.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="943.6" y2="931.8" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1241.0" y2="261.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1240.6" y2="232.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1297.4" y2="769.0" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="522.7" y2="159.9" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="652.4" y1="596.5" x2="507.3" y2="198.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1098.6" y1="381.6" x2="874.1" y2="132.6" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="987.7" y1="560.0" x2="1067.7" y2="578.3" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1067.7" y1="578.3" x2="1147.6" y2="596.5" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1147.6" y1="596.5" x2="1165.6" y2="831.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1147.6" y1="596.5" x2="1164.3" y2="843.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1147.6" y1="596.5" x2="1160.4" y2="854.4" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="1010.2" y1="768.8" x2="1356.1" y2="491.7" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="789.8" y1="768.8" x2="1270.3" y2="778.2" stroke="#64748b" stroke-width="1.4" stroke-opacity="0.55" marker-end="url(#arrow)"/>
+<line x1="585.9" y1="168.8" x2="713.2" y2="121.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="684.7" y2="118.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="656.4" y2="122.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="629.7" y2="132.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="561.6" y2="220.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="585.9" y1="168.8" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="684.7" y2="118.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="656.4" y2="122.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="629.7" y2="132.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="561.6" y2="220.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="713.2" y1="121.1" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="684.7" y1="118.8" x2="656.4" y2="122.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="684.7" y1="118.8" x2="629.7" y2="132.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="684.7" y1="118.8" x2="561.6" y2="220.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="684.7" y1="118.8" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="684.7" y1="118.8" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="656.4" y1="122.7" x2="629.7" y2="132.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="656.4" y1="122.7" x2="561.6" y2="220.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="656.4" y1="122.7" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="656.4" y1="122.7" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="629.7" y1="132.8" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="629.7" y1="132.8" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="561.6" y1="220.1" x2="558.4" y2="248.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="561.6" y1="220.1" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="558.4" y1="248.4" x2="605.8" y2="148.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1160.4" y1="854.4" x2="1164.3" y2="843.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1160.4" y1="854.4" x2="1165.6" y2="831.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1164.3" y1="843.2" x2="1165.6" y2="831.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="728.3" y2="955.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="596.2" y2="922.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="565.9" y2="874.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="559.0" y2="818.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="578.4" y2="900.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="618.4" y1="940.8" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="596.2" y2="922.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="565.9" y2="874.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="559.0" y2="818.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="578.4" y2="900.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="728.3" y1="955.0" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="596.2" y1="922.9" x2="565.9" y2="874.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="596.2" y1="922.9" x2="559.0" y2="818.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="596.2" y1="922.9" x2="578.4" y2="900.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="596.2" y1="922.9" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="596.2" y1="922.9" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="565.9" y1="874.9" x2="559.0" y2="818.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="565.9" y1="874.9" x2="578.4" y2="900.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="565.9" y1="874.9" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="565.9" y1="874.9" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="559.0" y1="818.6" x2="578.4" y2="900.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="559.0" y1="818.6" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="559.0" y1="818.6" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="578.4" y1="900.6" x2="559.4" y2="847.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="578.4" y1="900.6" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="559.4" y1="847.1" x2="700.3" y2="960.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1181.6" y2="139.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1071.7" y2="125.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1099.7" y2="119.3" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1156.0" y2="126.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1203.8" y2="157.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1128.2" y1="119.8" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1071.7" y2="125.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1099.7" y2="119.3" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1156.0" y2="126.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1203.8" y2="157.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1181.6" y1="139.2" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1071.7" y1="125.0" x2="1099.7" y2="119.3" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1071.7" y1="125.0" x2="1156.0" y2="126.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1071.7" y1="125.0" x2="1203.8" y2="157.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1071.7" y1="125.0" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1071.7" y1="125.0" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1099.7" y1="119.3" x2="1156.0" y2="126.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1099.7" y1="119.3" x2="1203.8" y2="157.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1099.7" y1="119.3" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1099.7" y1="119.3" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1156.0" y1="126.6" x2="1203.8" y2="157.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1156.0" y1="126.6" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1156.0" y1="126.6" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1203.8" y1="157.1" x2="1234.1" y2="205.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1203.8" y1="157.1" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1234.1" y1="205.1" x2="1221.6" y2="179.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1370.8" y2="408.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1372.1" y2="437.3" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1363.4" y2="381.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1282.9" y2="305.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1308.8" y2="317.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1350.1" y1="356.0" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1372.1" y2="437.3" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1363.4" y2="381.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1282.9" y2="305.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1308.8" y2="317.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.8" y1="408.8" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.1" y1="437.3" x2="1363.4" y2="381.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.1" y1="437.3" x2="1282.9" y2="305.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.1" y1="437.3" x2="1308.8" y2="317.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.1" y1="437.3" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.1" y1="437.3" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1363.4" y1="381.2" x2="1282.9" y2="305.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1363.4" y1="381.2" x2="1308.8" y2="317.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1363.4" y1="381.2" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1363.4" y1="381.2" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1282.9" y1="305.2" x2="1308.8" y2="317.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1282.9" y1="305.2" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1282.9" y1="305.2" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1308.8" y1="317.0" x2="1331.6" y2="334.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1308.8" y1="317.0" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1331.6" y1="334.2" x2="1356.1" y2="491.7" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1010.2" y1="768.8" x2="1010.2" y2="768.8" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1368.2" y2="683.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1342.3" y2="734.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1347.7" y2="575.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1361.8" y2="599.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1370.1" y2="627.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1372.3" y1="655.7" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1342.3" y2="734.4" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1347.7" y2="575.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1361.8" y2="599.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1370.1" y2="627.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1368.2" y1="683.9" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1342.3" y1="734.4" x2="1347.7" y2="575.1" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1342.3" y1="734.4" x2="1361.8" y2="599.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1342.3" y1="734.4" x2="1370.1" y2="627.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1342.3" y1="734.4" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1342.3" y1="734.4" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1347.7" y1="575.1" x2="1361.8" y2="599.9" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1347.7" y1="575.1" x2="1370.1" y2="627.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1347.7" y1="575.1" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1347.7" y1="575.1" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1361.8" y1="599.9" x2="1370.1" y2="627.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1361.8" y1="599.9" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1361.8" y1="599.9" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.1" y1="627.2" x2="1358.0" y2="710.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1370.1" y1="627.2" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="1358.0" y1="710.6" x2="1321.7" y2="754.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="864.4" y1="139.4" x2="856.4" y2="148.2" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="864.4" y1="139.4" x2="874.1" y2="132.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="856.4" y1="148.2" x2="874.1" y2="132.6" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="974.6" y1="695.0" x2="974.6" y2="695.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="974.6" y1="695.0" x2="974.6" y2="695.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+<line x1="974.6" y1="695.0" x2="974.6" y2="695.0" stroke="#94a3b8" stroke-width="1.0" stroke-opacity="0.23"/>
+</g>
+<g id="nodes">
+<g class="node" data-node-id="path_001"><circle cx="861.0" cy="621.1" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="861.0" y="671.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">感染与免疫</text></g>
+<g class="node" data-node-id="path_002"><circle cx="825.4" cy="695.0" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="825.4" y="741.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病原-宿主</text></g>
+<g class="node" data-node-id="path_003"><circle cx="789.8" cy="768.8" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="789.8" y="810.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">感染-免疫应答</text></g>
+<g class="node" data-node-id="path_004"><circle cx="939.0" cy="621.1" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="939.0" y="671.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">基础医学</text></g>
+<g class="node" data-node-id="path_005"><circle cx="974.6" cy="695.0" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="974.6" y="741.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">人体系统</text></g>
+<g class="node" data-node-id="path_006"><circle cx="1010.2" cy="768.8" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1010.2" y="810.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">器官-系统</text></g>
+<g class="node" data-node-id="path_007"><circle cx="974.6" cy="695.0" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="974.6" y="741.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">形态结构</text></g>
+<g class="node" data-node-id="path_008"><circle cx="1010.2" cy="768.8" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1010.2" y="810.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">细胞-组织-器官</text></g>
+<g class="node" data-node-id="path_009"><circle cx="812.3" cy="560.0" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="812.3" y="610.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病理学</text></g>
+<g class="node" data-node-id="path_010"><circle cx="732.3" cy="578.3" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="732.3" y="624.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病变机制</text></g>
+<g class="node" data-node-id="path_011"><circle cx="652.4" cy="596.5" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="652.4" y="638.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">损伤-反应-修复</text></g>
+<g class="node" data-node-id="path_012"><circle cx="974.6" cy="695.0" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="974.6" y="741.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">功能调节</text></g>
+<g class="node" data-node-id="path_013"><circle cx="1010.2" cy="768.8" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1010.2" y="810.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">机制-过程</text></g>
+<g class="node" data-node-id="path_014"><circle cx="900.0" cy="450.0" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="900.0" y="500.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">临床前医学</text></g>
+<g class="node" data-node-id="path_015"><circle cx="900.0" cy="368.0" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="900.0" y="414.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">疾病概念</text></g>
+<g class="node" data-node-id="path_016"><circle cx="900.0" cy="286.0" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="900.0" y="328.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">分类-演变</text></g>
+<g class="node" data-node-id="path_017"><circle cx="970.4" cy="483.9" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="970.4" y="533.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">临床医学</text></g>
+<g class="node" data-node-id="path_018"><circle cx="1034.5" cy="432.8" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1034.5" y="478.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">感染性疾病</text></g>
+<g class="node" data-node-id="path_019"><circle cx="1098.6" cy="381.6" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1098.6" y="423.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">传播-诊断-防治</text></g>
+<g class="node" data-node-id="path_020"><circle cx="829.6" cy="483.9" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="829.6" y="533.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病理生理学</text></g>
+<g class="node" data-node-id="path_021"><circle cx="765.5" cy="432.8" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="765.5" y="478.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">功能失衡</text></g>
+<g class="node" data-node-id="path_022"><circle cx="701.4" cy="381.6" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="701.4" y="423.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">稳态破坏</text></g>
+<g class="node" data-node-id="path_023"><circle cx="1010.2" cy="768.8" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1010.2" y="810.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">指标-参数</text></g>
+<g class="node" data-node-id="path_024"><circle cx="987.7" cy="560.0" r="34.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="987.7" y="610.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">医学方法</text></g>
+<g class="node" data-node-id="path_025"><circle cx="1067.7" cy="578.3" r="30.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1067.7" y="624.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">诊疗与评价</text></g>
+<g class="node" data-node-id="path_026"><circle cx="1147.6" cy="596.5" r="26.0" fill="#172033" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/><text x="1147.6" y="638.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">诊断-治疗-预防</text></g>
+<g class="node" data-node-id="kg_001"><circle cx="1361.8" cy="599.9" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1361.8" y="640.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">感染</text></g>
+<g class="node" data-node-id="kg_002"><circle cx="1370.1" cy="627.2" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1370.1" y="667.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">免疫</text></g>
+<g class="node" data-node-id="kg_003"><circle cx="1358.0" cy="710.6" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1358.0" y="750.7" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病原体</text></g>
+<g class="node" data-node-id="kg_004"><circle cx="1347.7" cy="575.1" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1347.7" y="615.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病毒</text></g>
+<g class="node" data-node-id="kg_005"><circle cx="1372.3" cy="655.7" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1372.3" y="695.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">细菌</text></g>
+<g class="node" data-node-id="kg_006"><circle cx="1099.7" cy="119.3" r="24.1" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1099.7" y="159.4" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">血管</text></g>
+<g class="node" data-node-id="kg_007"><circle cx="1368.2" cy="683.9" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1368.2" y="724.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">抗体</text></g>
+<g class="node" data-node-id="kg_008"><circle cx="1156.0" cy="126.6" r="24.1" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1156.0" y="166.7" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肺</text></g>
+<g class="node" data-node-id="kg_009"><circle cx="1342.3" cy="734.4" r="24.1" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1342.3" y="774.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">抗原</text></g>
+<g class="node" data-node-id="kg_010"><circle cx="1071.7" cy="125.0" r="24.1" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1071.7" y="165.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肝</text></g>
+<g class="node" data-node-id="kg_011"><circle cx="1128.2" cy="119.8" r="24.1" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1128.2" y="159.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肾</text></g>
+<g class="node" data-node-id="kg_012"><circle cx="1181.6" cy="139.2" r="24.1" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1181.6" y="179.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肠</text></g>
+<g class="node" data-node-id="kg_013"><circle cx="1282.9" cy="305.2" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1282.9" y="342.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">细胞</text></g>
+<g class="node" data-node-id="kg_014"><circle cx="558.4" cy="248.4" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="558.4" y="285.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">炎症</text></g>
+<g class="node" data-node-id="kg_015"><circle cx="559.4" cy="847.1" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="559.4" y="884.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">稳态</text></g>
+<g class="node" data-node-id="kg_016"><circle cx="1308.8" cy="317.0" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1308.8" y="354.4" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">组织</text></g>
+<g class="node" data-node-id="kg_017"><circle cx="561.6" cy="220.1" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="561.6" y="257.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">坏死</text></g>
+<g class="node" data-node-id="kg_018"><circle cx="570.9" cy="193.1" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="570.9" y="230.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">缺氧</text></g>
+<g class="node" data-node-id="kg_019"><circle cx="540.8" cy="702.6" r="21.4" fill="#be123c" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="540.8" y="740.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肿瘤</text></g>
+<g class="node" data-node-id="kg_020"><circle cx="1331.6" cy="334.2" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1331.6" y="371.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">上皮组织</text></g>
+<g class="node" data-node-id="kg_021"><circle cx="578.4" cy="900.6" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="578.4" y="938.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">动作电位</text></g>
+<g class="node" data-node-id="kg_022"><circle cx="1363.4" cy="381.2" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1363.4" y="418.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">血液</text></g>
+<g class="node" data-node-id="kg_023"><circle cx="700.3" cy="960.7" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="700.3" y="998.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">受体</text></g>
+<g class="node" data-node-id="kg_024"><circle cx="671.8" cy="960.2" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="671.8" y="997.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">激素</text></g>
+<g class="node" data-node-id="kg_025"><circle cx="644.0" cy="953.4" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="644.0" y="990.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">代谢</text></g>
+<g class="node" data-node-id="kg_026"><circle cx="1350.1" cy="356.0" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1350.1" y="393.4" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">结缔组织</text></g>
+<g class="node" data-node-id="kg_027"><circle cx="605.8" cy="148.4" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="605.8" y="185.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">血栓</text></g>
+<g class="node" data-node-id="kg_028"><circle cx="629.7" cy="132.8" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="629.7" y="170.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">凋亡</text></g>
+<g class="node" data-node-id="kg_029"><circle cx="1221.6" cy="179.4" r="21.4" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1221.6" y="216.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">神经系统</text></g>
+<g class="node" data-node-id="kg_030"><circle cx="1234.1" cy="205.1" r="21.4" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1234.1" y="242.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">免疫系统</text></g>
+<g class="node" data-node-id="kg_031"><circle cx="728.3" cy="955.0" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="728.3" y="992.4" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">呼吸</text></g>
+<g class="node" data-node-id="kg_032"><circle cx="618.4" cy="940.8" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="618.4" y="978.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">循环</text></g>
+<g class="node" data-node-id="kg_033"><circle cx="1203.8" cy="157.1" r="21.4" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1203.8" y="194.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">心脏</text></g>
+<g class="node" data-node-id="kg_034"><circle cx="713.2" cy="121.1" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="713.2" y="158.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">缺血</text></g>
+<g class="node" data-node-id="kg_035"><circle cx="596.2" cy="922.9" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="596.2" y="960.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">消化</text></g>
+<g class="node" data-node-id="kg_036"><circle cx="585.9" cy="168.8" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="585.9" y="206.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">修复</text></g>
+<g class="node" data-node-id="kg_037"><circle cx="1370.8" cy="408.8" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1370.8" y="446.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">器官</text></g>
+<g class="node" data-node-id="kg_038"><circle cx="656.4" cy="122.7" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="656.4" y="160.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">水肿</text></g>
+<g class="node" data-node-id="kg_039"><circle cx="559.0" cy="818.6" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="559.0" y="856.0" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">兴奋性</text></g>
+<g class="node" data-node-id="kg_040"><circle cx="565.9" cy="874.9" r="21.4" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="565.9" y="912.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">酶</text></g>
+<g class="node" data-node-id="kg_041"><circle cx="1372.1" cy="437.3" r="21.4" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1372.1" y="474.7" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">系统</text></g>
+<g class="node" data-node-id="kg_042"><circle cx="1321.7" cy="754.2" r="21.4" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1321.7" y="791.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">毒素</text></g>
+<g class="node" data-node-id="kg_043"><circle cx="856.4" cy="148.2" r="21.4" fill="#2563eb" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="856.4" y="185.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">病毒性肝炎</text></g>
+<g class="node" data-node-id="kg_044"><circle cx="684.7" cy="118.8" r="21.4" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="684.7" y="156.2" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">发热</text></g>
+<g class="node" data-node-id="kg_045"><circle cx="864.4" cy="139.4" r="21.4" fill="#2563eb" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="864.4" y="176.8" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">结核病</text></g>
+<g class="node" data-node-id="kg_046"><circle cx="737.0" cy="1012.8" r="18.7" fill="#059669" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="737.0" y="1047.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">反馈调节</text></g>
+<g class="node" data-node-id="kg_047"><circle cx="513.9" cy="460.4" r="18.7" fill="#ea580c" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="513.9" y="495.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">酸碱平衡</text></g>
+<g class="node" data-node-id="kg_048"><circle cx="740.4" cy="129.6" r="18.7" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="740.4" y="164.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">休克</text></g>
+<g class="node" data-node-id="kg_049"><circle cx="1367.1" cy="465.4" r="18.7" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1367.1" y="500.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">神经组织</text></g>
+<g class="node" data-node-id="kg_050"><circle cx="500.7" cy="238.9" r="18.7" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="500.7" y="273.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">栓塞</text></g>
+<g class="node" data-node-id="kg_051"><circle cx="546.1" cy="125.9" r="18.7" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="546.1" y="160.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">梗死</text></g>
+<g class="node" data-node-id="kg_052"><circle cx="943.6" cy="931.8" r="18.7" fill="#0d9488" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="943.6" y="966.5" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">血压</text></g>
+<g class="node" data-node-id="kg_053"><circle cx="1241.0" cy="261.4" r="18.7" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1241.0" y="296.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">内分泌系统</text></g>
+<g class="node" data-node-id="kg_054"><circle cx="1240.6" cy="232.9" r="18.7" fill="#4f46e5" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1240.6" y="267.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">胃</text></g>
+<g class="node" data-node-id="kg_055"><circle cx="1297.4" cy="769.0" r="18.7" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1297.4" y="803.7" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">疫苗</text></g>
+<g class="node" data-node-id="kg_056"><circle cx="522.7" cy="159.9" r="18.7" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="522.7" y="194.6" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">变性</text></g>
+<g class="node" data-node-id="kg_057"><circle cx="507.3" cy="198.2" r="18.7" fill="#dc2626" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="507.3" y="232.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">出血</text></g>
+<g class="node" data-node-id="kg_058"><circle cx="874.1" cy="132.6" r="18.7" fill="#2563eb" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="874.1" y="167.3" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">艾滋病</text></g>
+<g class="node" data-node-id="kg_059"><circle cx="1165.6" cy="831.4" r="18.7" fill="#64748b" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1165.6" y="866.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">治疗</text></g>
+<g class="node" data-node-id="kg_060"><circle cx="1164.3" cy="843.2" r="18.7" fill="#64748b" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1164.3" y="877.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">诊断</text></g>
+<g class="node" data-node-id="kg_061"><circle cx="1160.4" cy="854.4" r="18.7" fill="#64748b" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1160.4" y="889.1" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">流行病学</text></g>
+<g class="node" data-node-id="kg_062"><circle cx="1356.1" cy="491.7" r="18.7" fill="#7c3aed" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1356.1" y="526.4" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">肌组织</text></g>
+<g class="node" data-node-id="kg_063"><circle cx="1270.3" cy="778.2" r="18.7" fill="#0891b2" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/><text x="1270.3" y="812.9" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">败血症</text></g>
+</g>
+<text x="40" y="1088" font-size="13" fill="#64748b">关系统计：applies_to:23, contains:187, parallel:150, prerequisite:5</text>
+</svg>

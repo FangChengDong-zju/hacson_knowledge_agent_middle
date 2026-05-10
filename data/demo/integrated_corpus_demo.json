@@ -1,0 +1,129 @@
+{
+  "integrated_title": "7 本医学教材整合凝练版 Demo",
+  "original_chars": 3956088,
+  "target_chars": 1186826,
+  "integrated_chars": 235,
+  "compression_ratio": 5.9e-05,
+  "sections": [
+    {
+      "section_title": "结构-功能主干：甲状腺",
+      "core_text": "甲状腺是位于颈前区的重要内分泌器官，具有特定形态、毗邻和血供特点，并通过分泌甲状腺激素参与代谢、生长发育和能量调节。",
+      "decision_ids": [
+        "decision_0001"
+      ],
+      "source_refs": [
+        "局部解剖学 p120",
+        "生理学 p210"
+      ],
+      "detail_index": [
+        {
+          "keyword": "毗邻结构",
+          "source": "局部解剖学 p120"
+        },
+        {
+          "keyword": "激素调节反馈",
+          "source": "生理学 p210"
+        }
+      ],
+      "visual_refs": [
+        {
+          "label": "甲状腺局部解剖图",
+          "source": "局部解剖学 p121"
+        },
+        {
+          "label": "下丘脑-垂体-甲状腺轴示意图",
+          "source": "生理学 p212"
+        }
+      ]
+    },
+    {
+      "section_title": "损伤-反应-修复主干：炎症",
+      "core_text": "炎症是活体组织对损伤或感染的防御性反应，表现为血管反应、细胞反应和炎症介质参与，并可引起局部修复或全身反应。",
+      "decision_ids": [
+        "decision_0002"
+      ],
+      "source_refs": [
+        "病理学 p78",
+        "病理生理学 p96"
+      ],
+      "detail_index": [
+        {
+          "keyword": "各型炎症举例",
+          "source": "病理学 p82"
+        },
+        {
+          "keyword": "炎症介质列表",
+          "source": "病理生理学 p98"
+        }
+      ],
+      "visual_refs": [
+        {
+          "label": "炎症过程模式图",
+          "source": "病理学 p80"
+        }
+      ]
+    },
+    {
+      "section_title": "病原-宿主主干：感染与免疫应答",
+      "core_text": "感染是病原体与宿主相互作用的过程，结局取决于病原体致病性、宿主免疫状态和传播条件；医学微生物学提供机制基础，传染病学补充传播、防治和临床管理。",
+      "decision_ids": [
+        "decision_0003"
+      ],
+      "source_refs": [
+        "医学微生物学 p126",
+        "传染病学 p42"
+      ],
+      "detail_index": [
+        {
+          "keyword": "特定病原体例子",
+          "source": "医学微生物学相关章节"
+        },
+        {
+          "keyword": "各传染病临床表现",
+          "source": "传染病学各论"
+        }
+      ],
+      "visual_refs": [
+        {
+          "label": "感染过程示意图",
+          "source": "传染病学 p44"
+        }
+      ]
+    },
+    {
+      "section_title": "细节索引与图表索引",
+      "core_text": "病例、计算、操作和图表不直接展开为主干正文；系统保留关键词、页码和原文路径，供学生和教师按需回溯。",
+      "decision_ids": [
+        "decision_0004",
+        "decision_0005"
+      ],
+      "source_refs": [
+        "局部解剖学 p46",
+        "传染病学 p188",
+        "组织学与胚胎学 p52",
+        "病理学 p80"
+      ],
+      "detail_index": [
+        {
+          "keyword": "局部解剖操作步骤",
+          "source": "局部解剖学 p46"
+        },
+        {
+          "keyword": "传染病病例与鉴别诊断",
+          "source": "传染病学 p188"
+        }
+      ],
+      "visual_refs": [
+        {
+          "label": "基本组织结构图",
+          "source": "组织学与胚胎学 p52"
+        },
+        {
+          "label": "炎症过程图",
+          "source": "病理学 p80"
+        }
+      ]
+    }
+  ],
+  "teaching_integrity_summary": "Demo 保留结构-功能、损伤-反应、病原-宿主三条主干链路；案例、计算、操作和图表降级为索引。"
+}

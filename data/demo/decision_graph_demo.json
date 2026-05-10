@@ -1,0 +1,330 @@
+{
+  "nodes": [
+    {
+      "id": "concept::甲状腺",
+      "label": "甲状腺",
+      "kind": "concept",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "decision::decision_0001",
+      "label": "decision_0001",
+      "kind": "decision",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "common::甲状腺是内分泌系统的重要器官",
+      "label": "甲状腺是内分泌系统的重要器官",
+      "kind": "common_point",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "complement::形态、位置、毗邻和血供",
+      "label": "形态、位置、毗邻和血供",
+      "kind": "complementary_point",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "complement::甲状腺激素与代谢调节",
+      "label": "甲状腺激素与代谢调节",
+      "kind": "complementary_point",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "book::局部解剖学",
+      "label": "局部解剖学",
+      "kind": "textbook",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "book::生理学",
+      "label": "生理学",
+      "kind": "textbook",
+      "decision_id": "decision_0001"
+    },
+    {
+      "id": "concept::炎症",
+      "label": "炎症",
+      "kind": "concept",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "decision::decision_0002",
+      "label": "decision_0002",
+      "kind": "decision",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "common::炎症是机体对损伤或感染的防御性反应",
+      "label": "炎症是机体对损伤或感染的防御性反应",
+      "kind": "common_point",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "complement::炎症的形态学表现和分类",
+      "label": "炎症的形态学表现和分类",
+      "kind": "complementary_point",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "complement::炎症介质与全身反应",
+      "label": "炎症介质与全身反应",
+      "kind": "complementary_point",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "book::病理学",
+      "label": "病理学",
+      "kind": "textbook",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "book::病理生理学",
+      "label": "病理生理学",
+      "kind": "textbook",
+      "decision_id": "decision_0002"
+    },
+    {
+      "id": "concept::感染与免疫应答",
+      "label": "感染与免疫应答",
+      "kind": "concept",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "decision::decision_0003",
+      "label": "decision_0003",
+      "kind": "decision",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "common::感染结果取决于病原体与宿主反应",
+      "label": "感染结果取决于病原体与宿主反应",
+      "kind": "common_point",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "complement::病原体致病性和免疫机制",
+      "label": "病原体致病性和免疫机制",
+      "kind": "complementary_point",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "complement::流行过程、传播和临床防治",
+      "label": "流行过程、传播和临床防治",
+      "kind": "complementary_point",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "book::医学微生物学",
+      "label": "医学微生物学",
+      "kind": "textbook",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "book::传染病学",
+      "label": "传染病学",
+      "kind": "textbook",
+      "decision_id": "decision_0003"
+    },
+    {
+      "id": "concept::临床案例与操作说明",
+      "label": "临床案例与操作说明",
+      "kind": "concept",
+      "decision_id": "decision_0004"
+    },
+    {
+      "id": "decision::decision_0004",
+      "label": "decision_0004",
+      "kind": "decision",
+      "decision_id": "decision_0004"
+    },
+    {
+      "id": "concept::结构与机制图表",
+      "label": "结构与机制图表",
+      "kind": "concept",
+      "decision_id": "decision_0005"
+    },
+    {
+      "id": "decision::decision_0005",
+      "label": "decision_0005",
+      "kind": "decision",
+      "decision_id": "decision_0005"
+    },
+    {
+      "id": "complement::形态结构图示",
+      "label": "形态结构图示",
+      "kind": "complementary_point",
+      "decision_id": "decision_0005"
+    },
+    {
+      "id": "complement::病理过程图示",
+      "label": "病理过程图示",
+      "kind": "complementary_point",
+      "decision_id": "decision_0005"
+    },
+    {
+      "id": "book::组织学与胚胎学",
+      "label": "组织学与胚胎学",
+      "kind": "textbook",
+      "decision_id": "decision_0005"
+    }
+  ],
+  "edges": [
+    {
+      "source": "decision::decision_0001",
+      "target": "concept::甲状腺",
+      "relation": "merge",
+      "reason": "两本教材均讨论甲状腺这一高一级概念；局部解剖学补充结构细节，生理学补充功能机制。共同点合并，互补点保留，图示单独归档。"
+    },
+    {
+      "source": "concept::甲状腺",
+      "target": "common::甲状腺是内分泌系统的重要器官",
+      "relation": "contains_common",
+      "reason": "共同点形成跨教材关联"
+    },
+    {
+      "source": "concept::甲状腺",
+      "target": "complement::形态、位置、毗邻和血供",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "concept::甲状腺",
+      "target": "complement::甲状腺激素与代谢调节",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "book::局部解剖学",
+      "target": "concept::甲状腺",
+      "relation": "evidence_for",
+      "reason": "互补扩展"
+    },
+    {
+      "source": "book::生理学",
+      "target": "concept::甲状腺",
+      "relation": "evidence_for",
+      "reason": "互补扩展"
+    },
+    {
+      "source": "decision::decision_0002",
+      "target": "concept::炎症",
+      "relation": "merge",
+      "reason": "两本教材对炎症的核心定义重合，但分别强调形态变化和功能反应；合并共同定义，保留互补视角。"
+    },
+    {
+      "source": "concept::炎症",
+      "target": "common::炎症是机体对损伤或感染的防御性反应",
+      "relation": "contains_common",
+      "reason": "共同点形成跨教材关联"
+    },
+    {
+      "source": "concept::炎症",
+      "target": "complement::炎症的形态学表现和分类",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "concept::炎症",
+      "target": "complement::炎症介质与全身反应",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "book::病理学",
+      "target": "concept::炎症",
+      "relation": "evidence_for",
+      "reason": "共同主干"
+    },
+    {
+      "source": "book::病理生理学",
+      "target": "concept::炎症",
+      "relation": "evidence_for",
+      "reason": "共同主干"
+    },
+    {
+      "source": "decision::decision_0003",
+      "target": "concept::感染与免疫应答",
+      "relation": "merge",
+      "reason": "两本教材共同讨论感染，但学科侧重点不同；共同主干合并，病原机制和临床防控作为互补点保留。"
+    },
+    {
+      "source": "concept::感染与免疫应答",
+      "target": "common::感染结果取决于病原体与宿主反应",
+      "relation": "contains_common",
+      "reason": "共同点形成跨教材关联"
+    },
+    {
+      "source": "concept::感染与免疫应答",
+      "target": "complement::病原体致病性和免疫机制",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "concept::感染与免疫应答",
+      "target": "complement::流行过程、传播和临床防治",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "book::医学微生物学",
+      "target": "concept::感染与免疫应答",
+      "relation": "evidence_for",
+      "reason": "互补扩展"
+    },
+    {
+      "source": "book::传染病学",
+      "target": "concept::感染与免疫应答",
+      "relation": "evidence_for",
+      "reason": "互补扩展"
+    },
+    {
+      "source": "decision::decision_0004",
+      "target": "concept::临床案例与操作说明",
+      "relation": "downgrade_detail",
+      "reason": "此类内容有教学参考价值，但不属于跨教材主干；为满足 30% 压缩目标，应降级为索引。"
+    },
+    {
+      "source": "book::局部解剖学",
+      "target": "concept::临床案例与操作说明",
+      "relation": "evidence_for",
+      "reason": "案例降级"
+    },
+    {
+      "source": "book::传染病学",
+      "target": "concept::临床案例与操作说明",
+      "relation": "evidence_for",
+      "reason": "案例降级"
+    },
+    {
+      "source": "decision::decision_0005",
+      "target": "concept::结构与机制图表",
+      "relation": "keep_visual_index",
+      "reason": "图片和表格具有可读性和教学价值，文本可压缩，但图示应汇总保留并链接原文。"
+    },
+    {
+      "source": "concept::结构与机制图表",
+      "target": "complement::形态结构图示",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "concept::结构与机制图表",
+      "target": "complement::病理过程图示",
+      "relation": "contains_complement",
+      "reason": "互补点保留"
+    },
+    {
+      "source": "book::组织学与胚胎学",
+      "target": "concept::结构与机制图表",
+      "relation": "evidence_for",
+      "reason": "图表归档"
+    },
+    {
+      "source": "book::病理学",
+      "target": "concept::结构与机制图表",
+      "relation": "evidence_for",
+      "reason": "图表归档"
+    }
+  ]
+}

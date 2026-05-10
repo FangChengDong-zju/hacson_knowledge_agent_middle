@@ -1,0 +1,302 @@
+[
+  {
+    "decision_id": "decision_0001",
+    "cluster_id": "cluster_thyroid_001",
+    "action": "merge",
+    "reason_type": "互补扩展",
+    "target_concept": "甲状腺",
+    "keyword_path": [
+      "基础医学",
+      "人体系统",
+      "内分泌系统",
+      "甲状腺"
+    ],
+    "affected_sources": [
+      {
+        "textbook": "局部解剖学",
+        "chapter": "颈部",
+        "page": 120,
+        "source_text": "甲状腺位于颈前区，具有特定形态、毗邻关系和血管供应。"
+      },
+      {
+        "textbook": "生理学",
+        "chapter": "内分泌",
+        "page": 210,
+        "source_text": "甲状腺分泌甲状腺激素，参与机体代谢、生长发育和能量调节。"
+      }
+    ],
+    "common_points": [
+      {
+        "point": "甲状腺是内分泌系统的重要器官",
+        "evidence_sources": [
+          "局部解剖学 p120",
+          "生理学 p210"
+        ]
+      }
+    ],
+    "complementary_points": [
+      {
+        "point": "形态、位置、毗邻和血供",
+        "source": "局部解剖学 p120"
+      },
+      {
+        "point": "甲状腺激素与代谢调节",
+        "source": "生理学 p210"
+      }
+    ],
+    "integrated_text": "甲状腺是位于颈前区的重要内分泌器官，具有特定形态、毗邻和血供特点，并通过分泌甲状腺激素参与代谢、生长发育和能量调节。",
+    "detail_index": [
+      {
+        "keyword": "毗邻结构",
+        "source": "局部解剖学 p120"
+      },
+      {
+        "keyword": "激素调节反馈",
+        "source": "生理学 p210"
+      }
+    ],
+    "visual_refs": [
+      {
+        "label": "甲状腺局部解剖图",
+        "source": "局部解剖学 p121"
+      },
+      {
+        "label": "下丘脑-垂体-甲状腺轴示意图",
+        "source": "生理学 p212"
+      }
+    ],
+    "reason": "两本教材均讨论甲状腺这一高一级概念；局部解剖学补充结构细节，生理学补充功能机制。共同点合并，互补点保留，图示单独归档。",
+    "teaching_integrity_note": "整合后保留从结构到功能的学习链路。",
+    "confidence": 0.88,
+    "counts_in_core": true
+  },
+  {
+    "decision_id": "decision_0002",
+    "cluster_id": "cluster_inflammation_001",
+    "action": "merge",
+    "reason_type": "共同主干",
+    "target_concept": "炎症",
+    "keyword_path": [
+      "病理学",
+      "病变机制",
+      "损伤-反应-修复",
+      "炎症"
+    ],
+    "affected_sources": [
+      {
+        "textbook": "病理学",
+        "chapter": "炎症",
+        "page": 78,
+        "source_text": "炎症是具有血管系统的活体组织对损伤因子的防御反应。"
+      },
+      {
+        "textbook": "病理生理学",
+        "chapter": "发热与炎症介质",
+        "page": 96,
+        "source_text": "炎症介质可参与局部反应和全身反应，并影响体温调节。"
+      }
+    ],
+    "common_points": [
+      {
+        "point": "炎症是机体对损伤或感染的防御性反应",
+        "evidence_sources": [
+          "病理学 p78",
+          "病理生理学 p96"
+        ]
+      }
+    ],
+    "complementary_points": [
+      {
+        "point": "炎症的形态学表现和分类",
+        "source": "病理学 p78"
+      },
+      {
+        "point": "炎症介质与全身反应",
+        "source": "病理生理学 p96"
+      }
+    ],
+    "integrated_text": "炎症是活体组织对损伤或感染的防御性反应，表现为血管反应、细胞反应和炎症介质参与，并可引起局部修复或全身反应。",
+    "detail_index": [
+      {
+        "keyword": "各型炎症举例",
+        "source": "病理学 p82"
+      },
+      {
+        "keyword": "炎症介质列表",
+        "source": "病理生理学 p98"
+      }
+    ],
+    "visual_refs": [
+      {
+        "label": "炎症过程模式图",
+        "source": "病理学 p80"
+      }
+    ],
+    "reason": "两本教材对炎症的核心定义重合，但分别强调形态变化和功能反应；合并共同定义，保留互补视角。",
+    "teaching_integrity_note": "保留损伤因子-炎症反应-修复/全身反应的逻辑链。",
+    "confidence": 0.9,
+    "counts_in_core": true
+  },
+  {
+    "decision_id": "decision_0003",
+    "cluster_id": "cluster_infection_immune_001",
+    "action": "merge",
+    "reason_type": "互补扩展",
+    "target_concept": "感染与免疫应答",
+    "keyword_path": [
+      "感染与免疫",
+      "病原-宿主",
+      "感染-免疫应答"
+    ],
+    "affected_sources": [
+      {
+        "textbook": "医学微生物学",
+        "chapter": "感染与免疫",
+        "page": 126,
+        "source_text": "病原微生物感染后可引起机体固有免疫和适应性免疫应答。"
+      },
+      {
+        "textbook": "传染病学",
+        "chapter": "传染病总论",
+        "page": 42,
+        "source_text": "传染病发生取决于病原体、宿主免疫状态和传播条件。"
+      }
+    ],
+    "common_points": [
+      {
+        "point": "感染结果取决于病原体与宿主反应",
+        "evidence_sources": [
+          "医学微生物学 p126",
+          "传染病学 p42"
+        ]
+      }
+    ],
+    "complementary_points": [
+      {
+        "point": "病原体致病性和免疫机制",
+        "source": "医学微生物学 p126"
+      },
+      {
+        "point": "流行过程、传播和临床防治",
+        "source": "传染病学 p42"
+      }
+    ],
+    "integrated_text": "感染是病原体与宿主相互作用的过程，结局取决于病原体致病性、宿主免疫状态和传播条件；医学微生物学提供机制基础，传染病学补充传播、防治和临床管理。",
+    "detail_index": [
+      {
+        "keyword": "特定病原体例子",
+        "source": "医学微生物学相关章节"
+      },
+      {
+        "keyword": "各传染病临床表现",
+        "source": "传染病学各论"
+      }
+    ],
+    "visual_refs": [
+      {
+        "label": "感染过程示意图",
+        "source": "传染病学 p44"
+      }
+    ],
+    "reason": "两本教材共同讨论感染，但学科侧重点不同；共同主干合并，病原机制和临床防控作为互补点保留。",
+    "teaching_integrity_note": "保留从病原体到宿主反应再到传播防治的学习顺序。",
+    "confidence": 0.87,
+    "counts_in_core": true
+  },
+  {
+    "decision_id": "decision_0004",
+    "cluster_id": "cluster_case_examples_001",
+    "action": "downgrade_detail",
+    "reason_type": "案例降级",
+    "target_concept": "临床案例与操作说明",
+    "keyword_path": [
+      "医学方法",
+      "教学细节",
+      "案例索引"
+    ],
+    "affected_sources": [
+      {
+        "textbook": "局部解剖学",
+        "chapter": "局部解剖操作",
+        "page": 46,
+        "source_text": "章节中包含大量操作步骤和病例引入。"
+      },
+      {
+        "textbook": "传染病学",
+        "chapter": "各论",
+        "page": 188,
+        "source_text": "章节中包含具体病例、流行病学数据和鉴别诊断细节。"
+      }
+    ],
+    "common_points": [],
+    "complementary_points": [],
+    "integrated_text": "具体病例、操作说明和长篇背景不进入主干教材正文，仅保留关键词索引用于按需查阅。",
+    "detail_index": [
+      {
+        "keyword": "局部解剖操作步骤",
+        "source": "局部解剖学 p46"
+      },
+      {
+        "keyword": "传染病病例与鉴别诊断",
+        "source": "传染病学 p188"
+      }
+    ],
+    "visual_refs": [],
+    "reason": "此类内容有教学参考价值，但不属于跨教材主干；为满足 30% 压缩目标，应降级为索引。",
+    "teaching_integrity_note": "主干学习不依赖完整案例文本，索引保留复查入口。",
+    "confidence": 0.82,
+    "counts_in_core": false
+  },
+  {
+    "decision_id": "decision_0005",
+    "cluster_id": "cluster_visual_summary_001",
+    "action": "keep_visual_index",
+    "reason_type": "图表归档",
+    "target_concept": "结构与机制图表",
+    "keyword_path": [
+      "教学资源",
+      "图表索引"
+    ],
+    "affected_sources": [
+      {
+        "textbook": "组织学与胚胎学",
+        "chapter": "基本组织",
+        "page": 52,
+        "source_text": "该页含组织结构模式图。"
+      },
+      {
+        "textbook": "病理学",
+        "chapter": "炎症",
+        "page": 80,
+        "source_text": "该页含炎症过程图。"
+      }
+    ],
+    "common_points": [],
+    "complementary_points": [
+      {
+        "point": "形态结构图示",
+        "source": "组织学与胚胎学 p52"
+      },
+      {
+        "point": "病理过程图示",
+        "source": "病理学 p80"
+      }
+    ],
+    "integrated_text": "图表不进入文本去重流程，统一进入图表索引，用于支持结构、机制和病理过程的可视化学习。",
+    "detail_index": [],
+    "visual_refs": [
+      {
+        "label": "基本组织结构图",
+        "source": "组织学与胚胎学 p52"
+      },
+      {
+        "label": "炎症过程图",
+        "source": "病理学 p80"
+      }
+    ],
+    "reason": "图片和表格具有可读性和教学价值，文本可压缩，但图示应汇总保留并链接原文。",
+    "teaching_integrity_note": "图表索引补足文本压缩后的视觉理解入口。",
+    "confidence": 0.91,
+    "counts_in_core": false
+  }
+]

@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-10 11:12:59 +08:00",
+    "source_textbooks":  7,
+    "outline_count":  7,
+    "item_count":  2391,
+    "graph_core_items":  2255,
+    "detail_index_items":  136,
+    "visual_ref_count":  283,
+    "demo_output":  "E:\\codex test\\Preparation for Hacson\\hacson_knowledge_agent\\data\\demo\\outlines_demo.json",
+    "runtime_output":  "E:\\codex test\\Preparation for Hacson\\hacson_knowledge_agent\\data\\processed\\outlines.json"
+}

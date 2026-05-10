@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+node_modules/
+dist/
+.vite/
+
+# Contest textbook files must not be pushed to GitHub.
+data/textbooks/*.pdf
+data/textbooks/*
+*.pdf
+
+# Generated runtime artifacts.
+data/processed/*.json
+data/indexes/*.json
+data/live/
+data/demo/outlines_demo.json
+data/demo/graph_demo.json
+report/*.generated.md

@@ -1,0 +1,11 @@
+{
+  "demo_mode": true,
+  "source_graph_nodes": 89,
+  "source_graph_edges": 365,
+  "decision_count": 5,
+  "original_chars": 3956088,
+  "target_chars": 1186826,
+  "integrated_chars": 235,
+  "compression_ratio": 5.9e-05,
+  "note": "This demo illustrates the LLM integration workflow before live API calls are wired."
+}
