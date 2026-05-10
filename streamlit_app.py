@@ -1501,6 +1501,39 @@ def render_textbook_source_panel() -> None:
         st.warning("尚未检测到已解析教材数据。请先上传教材或确认本地路径可用。")
 
 
+def render_integration_evidence_overview(decisions: list[dict], corpus: dict, decision_graph: dict) -> None:
+    source_count = sum(len(decision.get("affected_sources", [])) for decision in decisions)
+    core_sections = len(corpus.get("sections", []))
+    overrides = st.session_state.get("decision_overrides", {})
+    metric_row(
+        [
+            ("闭环步骤", "8/8"),
+            ("整合决策", str(len(decisions))),
+            ("来源引用", str(source_count)),
+            ("文档章节", str(core_sections)),
+            ("图谱规模", f"{len(decision_graph.get('nodes', []))} 节点 / {len(decision_graph.get('edges', []))} 边"),
+            ("教师反馈", str(len(overrides))),
+        ]
+    )
+    st.markdown(
+        """
+        | 闭环环节 | 当前证据 |
+        |---|---|
+        | 教材来源 | `1. 教材来源` 支持本地路径和上传入口；本地 7 本教材解析闭环见 `report/local_textbook_loop_check.md` |
+        | 个性化需求 | `2. 整合需求与二次反馈` 记录教师要求；用户不输入时使用 Agent 默认整理模式 |
+        | Agent 整合 | `查看真实 LLM 整合输入/输出` 展示 prompt、source_items、JSON schema 和 LLM 返回记录 |
+        | 整合文档 | `4. 整合结果：文档` 展示 30% 凝练版教材、来源、detail_index 和 visual_refs |
+        | 决策图谱 | `4. 整合结果：图谱` 展示由 integration_decisions 派生的 decision graph |
+        | 决策依据 | `5. 整合依据：决策记录` 展示 action、reason_type、reason、confidence 和 affected_sources |
+        | 二次反馈 | 同一输入栏可继续提出保留、拆分、合并、降级；结果写入 `decision_overrides` |
+        | RAG 问答 | 左侧切换 `资料问答`，系统先查整合资料，再查教材原文 chunk |
+        """
+    )
+    st.info(
+        "完整闭环证据文档见 `docs/整合闭环证据.md`。两本书只保留为开发调试入口；正式主流程默认面向用户指定的全部教材。"
+    )
+
+
 def ensure_case_a_state() -> None:
     if "case_a_chat_history" not in st.session_state:
         st.session_state.case_a_chat_history = [
@@ -2220,6 +2253,9 @@ def main() -> None:
 
     render_textbook_source_panel()
     render_teacher_feedback_workspace(effective_decisions, api_key, base_url, model)
+
+    with st.expander("3. 整合闭环证据总览", expanded=True):
+        render_integration_evidence_overview(effective_decisions, corpus, decision_graph)
 
     with st.expander("3. 查看整合流程与指标", expanded=False):
         metric_row(
