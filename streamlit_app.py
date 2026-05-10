@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import html
 import json
-import math
 import re
 import urllib.error
 import urllib.request
@@ -397,19 +396,17 @@ def decision_card(decision: dict) -> None:
 def render_decision_graph(graph: dict) -> str:
     nodes = graph.get("nodes", [])
     edges = graph.get("edges", [])
-    width, height = 1120, 760
-    cx, cy = width / 2, height / 2
     by_kind = defaultdict(list)
     for node in nodes:
         by_kind[node.get("kind", "other")].append(node)
 
-    rings = {
-        "concept": 110,
-        "common_point": 230,
-        "complementary_point": 300,
-        "decision": 370,
-        "textbook": 370,
-        "teacher_override": 435,
+    column_specs = {
+        "textbook": {"x": 34, "w": 150, "title": "来源教材"},
+        "decision": {"x": 230, "w": 170, "title": "整合决策"},
+        "concept": {"x": 450, "w": 170, "title": "核心概念"},
+        "common_point": {"x": 670, "w": 180, "title": "共同点"},
+        "complementary_point": {"x": 900, "w": 180, "title": "互补点"},
+        "teacher_override": {"x": 1130, "w": 160, "title": "教师反馈"},
     }
     colors = {
         "concept": "#2563eb",
@@ -419,22 +416,47 @@ def render_decision_graph(graph: dict) -> str:
         "textbook": "#64748b",
         "teacher_override": "#16a34a",
     }
-    positions: dict[str, tuple[float, float]] = {}
-    ordered_kinds = ["concept", "common_point", "complementary_point", "decision", "textbook", "teacher_override"]
-    for kind_index, kind in enumerate(ordered_kinds):
+    ordered_kinds = ["textbook", "decision", "concept", "common_point", "complementary_point", "teacher_override"]
+    max_items = max((len(by_kind.get(kind, [])) for kind in ordered_kinds), default=1)
+    width, height = 1320, max(620, 135 + max_items * 68)
+    positions: dict[str, tuple[float, float, float, float]] = {}
+
+    def text_lines(value: object, max_chars: int = 11, max_lines: int = 2) -> list[str]:
+        text = str(value or "")
+        if not text:
+            return [""]
+        chunks = [text[index : index + max_chars] for index in range(0, len(text), max_chars)]
+        if len(chunks) > max_lines:
+            chunks = chunks[:max_lines]
+            chunks[-1] = chunks[-1][: max_chars - 1] + "…"
+        return chunks
+
+    for kind in ordered_kinds:
         items = by_kind.get(kind, [])
-        radius = rings.get(kind, 260)
-        offset = kind_index * 0.31
+        spec = column_specs[kind]
+        x = spec["x"]
+        item_height = 48
+        gap = 20
+        total_height = len(items) * item_height + max(len(items) - 1, 0) * gap
+        y = max(118, 118 + (height - 160 - total_height) / 2)
         for index, node in enumerate(items):
-            angle = (2 * math.pi * index / max(len(items), 1)) - math.pi / 2 + offset
-            positions[node["id"]] = (cx + math.cos(angle) * radius, cy + math.sin(angle) * radius)
+            positions[node["id"]] = (x, y + index * (item_height + gap), spec["w"], item_height)
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<rect x="0" y="0" width="1120" height="760" fill="#f8fafc"/>',
-        '<text x="28" y="42" font-size="24" font-weight="800" fill="#172033">由整合决策生成的最终图谱 Demo</text>',
-        '<text x="28" y="68" font-size="14" fill="#64748b">节点来自 decision_id、共同点、互补点和来源教材；边来自整合理由。</text>',
+        f'<rect x="0" y="0" width="{width}" height="{height}" rx="8" fill="#f8fafc"/>',
+        '<text x="28" y="42" font-size="24" font-weight="800" fill="#172033">由整合决策生成的最终图谱</text>',
+        '<text x="28" y="68" font-size="14" fill="#64748b">稳定分层视图：来源教材 -> 整合决策 -> 核心概念 -> 共同点/互补点 -> 教师反馈。</text>',
     ]
+
+    for kind in ordered_kinds:
+        spec = column_specs[kind]
+        title = spec["title"]
+        count = len(by_kind.get(kind, []))
+        parts.append(
+            f'<text x="{spec["x"]}" y="104" font-size="13" font-weight="800" fill="#475569">{esc(title)}（{count}）</text>'
+        )
+
     for edge in edges:
         source = positions.get(edge.get("source"))
         target = positions.get(edge.get("target"))
@@ -442,26 +464,41 @@ def render_decision_graph(graph: dict) -> str:
             continue
         stroke = "#16a34a" if edge.get("teacher_adjusted") else "#94a3b8"
         width_value = "2.2" if edge.get("teacher_adjusted") else "1.3"
-        opacity = "0.86" if edge.get("teacher_adjusted") else "0.58"
+        opacity = "0.82" if edge.get("teacher_adjusted") else "0.42"
+        x1 = source[0] + source[2]
+        y1 = source[1] + source[3] / 2
+        x2 = target[0]
+        y2 = target[1] + target[3] / 2
+        if x2 < x1:
+            x1 = source[0]
+            x2 = target[0] + target[2]
         parts.append(
-            f'<line x1="{source[0]:.1f}" y1="{source[1]:.1f}" x2="{target[0]:.1f}" y2="{target[1]:.1f}" '
-            f'stroke="{stroke}" stroke-width="{width_value}" stroke-opacity="{opacity}"/>'
+            f'<path d="M {x1:.1f} {y1:.1f} C {(x1 + x2) / 2:.1f} {y1:.1f}, {(x1 + x2) / 2:.1f} {y2:.1f}, {x2:.1f} {y2:.1f}" '
+            f'fill="none" stroke="{stroke}" stroke-width="{width_value}" stroke-opacity="{opacity}"/>'
         )
+
     for node in nodes:
-        x, y = positions.get(node["id"], (cx, cy))
         kind = node.get("kind", "other")
+        x, y, node_width, node_height = positions.get(
+            node["id"],
+            (480, height / 2, column_specs.get(kind, {"w": 160})["w"], 48),
+        )
         color = colors.get(kind, "#334155")
-        r = 28 if kind == "concept" else 21 if kind in {"common_point", "complementary_point"} else 18
-        label = str(node.get("label", ""))[:12]
+        label = str(node.get("label", ""))
         stroke = "#16a34a" if node.get("teacher_adjusted") else "#fff"
-        stroke_width = "4" if node.get("teacher_adjusted") else "2"
+        stroke_width = "3" if node.get("teacher_adjusted") else "1.5"
         parts.append(
-            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{color}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
+            f'<rect x="{x:.1f}" y="{y:.1f}" width="{node_width:.1f}" height="{node_height:.1f}" rx="8" '
+            f'fill="{color}" stroke="{stroke}" stroke-width="{stroke_width}">'
+            f'<title>{esc(label)} · {esc(kind)}</title></rect>'
         )
-        parts.append(
-            f'<text x="{x:.1f}" y="{y + r + 15:.1f}" text-anchor="middle" font-size="12" font-weight="700" fill="#172033">{esc(label)}</text>'
-        )
-        parts.append("</svg>")
+        lines = text_lines(label, max_chars=12 if kind != "decision" else 16, max_lines=2)
+        for line_index, line in enumerate(lines):
+            parts.append(
+                f'<text x="{x + node_width / 2:.1f}" y="{y + 21 + line_index * 15:.1f}" '
+                f'text-anchor="middle" font-size="12" font-weight="760" fill="#ffffff">{esc(line)}</text>'
+            )
+    parts.append("</svg>")
     return "\n".join(parts)
 
 
