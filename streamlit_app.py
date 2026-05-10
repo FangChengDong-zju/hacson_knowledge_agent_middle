@@ -1530,7 +1530,8 @@ def render_integration_evidence_overview(decisions: list[dict], corpus: dict, de
         """
     )
     st.info(
-        "完整闭环证据文档见 `docs/整合闭环证据.md`。两本书只保留为开发调试入口；正式主流程默认面向用户指定的全部教材。"
+        "完整闭环证据文档见 `docs/整合闭环证据.md`；官方评分映射见 `docs/评分点对照表.md`。"
+        "两本书只保留为开发调试入口；正式主流程默认面向用户指定的全部教材。"
     )
 
 
