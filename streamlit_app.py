@@ -119,6 +119,21 @@ def inject_styles() -> None:
         p, li, .stMarkdown { color: var(--ink); }
         [data-testid="stSidebar"] { background: #fbfbfd; border-right: 1px solid #e5e5ea; }
         [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 { color: var(--ink); }
+        .sidebar-brand { padding: 6px 0 2px; }
+        .sidebar-brand h1 {
+            margin: 0 0 6px;
+            font-size: 22px;
+            line-height: 1.18;
+            font-weight: 800;
+            color: var(--ink);
+        }
+        .sidebar-brand p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.45;
+            font-weight: 650;
+        }
         div[data-testid="stTabs"] button p { font-size: 15px; font-weight: 650; }
         div[data-testid="stExpander"] {
             border: 1px solid #e5e5ea;
@@ -2312,14 +2327,17 @@ def main() -> None:
     effective_decisions = apply_decision_overrides(base_decisions)
     decision_graph = build_decision_graph_from_decisions(effective_decisions)
 
-    product_header(
-        "Hacson 学科知识整合智能体",
-        "先确定教材来源，再写入个性化整合需求；Agent 生成可追溯整合文档与图谱，用户可基于结果继续反馈迭代。",
-        "AI Full-stack Hackathon",
-        ["教材整合", "图谱生成", "二次反馈", "来源可追溯"],
-    )
-
     with st.sidebar:
+        st.markdown(
+            """
+            <div class="sidebar-brand">
+              <h1>Hacson 学科知识整合智能体</h1>
+              <p>教材整合 · 图谱生成 · 来源追溯</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.divider()
         st.header("LLM 配置")
         base_url = st.text_input("Base URL", value="https://chaoye.xyz")
         model = st.text_input("Model", value="gpt-5.4")
