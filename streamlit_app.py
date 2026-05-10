@@ -268,6 +268,21 @@ def inject_styles() -> None:
         }
         .chat-focus h3 { margin: 0 0 8px; font-size: 24px; }
         .chat-focus p { margin: 0; color: var(--muted); line-height: 1.65; }
+        .dynamic-chat-card {
+            border: 1px solid #d6e6ff;
+            border-radius: 8px;
+            background: #ffffff;
+            padding: 18px 20px 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 14px 34px rgba(0,113,227,0.10);
+        }
+        .dynamic-chat-card h3 { margin: 0 0 8px; font-size: 22px; }
+        .dynamic-chat-card p { margin: 0 0 12px; color: var(--muted); line-height: 1.6; }
+        .static-info-stack {
+            border-top: 1px solid #e5e5ea;
+            padding-top: 8px;
+            margin-top: 10px;
+        }
         @media (max-width: 900px) {
             .hero { padding: 24px 22px; }
             .hero h1 { font-size: 30px; }
@@ -1325,17 +1340,25 @@ def handle_teacher_message(message: str, decisions: list[dict]) -> str:
     )
 
 
-def render_teacher_feedback_workspace(decisions: list[dict], api_key: str, base_url: str, model: str) -> None:
-    labels = [f"{item['decision_id']}｜{item['target_concept']}｜{item['action']}" for item in decisions]
-    ids = [item["decision_id"] for item in decisions]
-    active_id = st.session_state.get("active_decision_id", ids[0] if ids else "")
-    active_index = ids.index(active_id) if active_id in ids else 0
+def handle_teacher_chat_prompt(prompt: str, decisions: list[dict], api_key: str, base_url: str, model: str) -> None:
+    st.session_state.teacher_chat_history.append({"role": "user", "content": prompt})
+    if any(word in prompt for word in ["开始整合", "生成整合", "生成文档", "生成图谱", "调用 LLM", "调用LLM", "真实整合"]):
+        try:
+            response = run_case_b_live_integration(prompt, decisions, api_key, base_url, model)
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError, ValueError) as exc:
+            response = f"教材整合调用失败：{exc}\n\n已保留当前整合结果；请检查 API Key、Base URL、模型名或稍后重试。"
+    else:
+        response = handle_teacher_message(prompt, decisions)
+    st.session_state.teacher_chat_history.append({"role": "assistant", "content": response})
+    st.rerun()
 
+
+def render_teacher_dynamic_chat_card(decisions: list[dict], api_key: str, base_url: str, model: str) -> None:
     st.markdown(
         """
-        <div class="chat-focus">
-          <h3>2. 整合需求与二次反馈</h3>
-          <p>先写入本轮个性化需求；不填写时使用 Agent 默认整理模式。生成结果后，继续在同一个输入栏提出二次反馈。</p>
+        <div class="dynamic-chat-card">
+          <h3>动态对话反馈</h3>
+          <p>这里只显示用户提问和 Agent 动态反馈。教材来源、图谱、文档和审计证据放在下方静态信息区。</p>
         </div>
         """,
         unsafe_allow_html=True,
@@ -1344,6 +1367,27 @@ def render_teacher_feedback_workspace(decisions: list[dict], api_key: str, base_
     for message in st.session_state.teacher_chat_history:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
+
+    prompt = st.chat_input("输入整合需求或二次反馈，例如：面向临床见习，病例保留为索引")
+    if prompt:
+        handle_teacher_chat_prompt(prompt, decisions, api_key, base_url, model)
+
+
+def render_teacher_static_controls(decisions: list[dict], api_key: str, base_url: str, model: str) -> None:
+    labels = [f"{item['decision_id']}｜{item['target_concept']}｜{item['action']}" for item in decisions]
+    ids = [item["decision_id"] for item in decisions]
+    active_id = st.session_state.get("active_decision_id", ids[0] if ids else "")
+    active_index = ids.index(active_id) if active_id in ids else 0
+
+    st.markdown(
+        """
+        <div class="chat-focus">
+          <h3>2. 整合控制与静态证据</h3>
+          <p>这里放置生成按钮、聚焦决策、提示词预览、真实 LLM 输入输出和教师修改记录；动态对话内容只显示在上方对话卡内。</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     col_live, col_hint = st.columns([0.42, 0.58])
     with col_live:
@@ -1457,19 +1501,6 @@ def render_teacher_feedback_workspace(decisions: list[dict], api_key: str, base_
             st.info("当前还没有教师 override。对话中提出“保留、拆分、降级、图表索引”等要求后，这里会出现修改记录。")
         else:
             st.json(overrides, expanded=True)
-
-    prompt = st.chat_input("输入整合需求或二次反馈，例如：面向临床见习，病例保留为索引")
-    if prompt:
-        st.session_state.teacher_chat_history.append({"role": "user", "content": prompt})
-        if any(word in prompt for word in ["开始整合", "生成整合", "生成文档", "生成图谱", "调用 LLM", "调用LLM", "真实整合"]):
-            try:
-                response = run_case_b_live_integration(prompt, decisions, api_key, base_url, model)
-            except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError, ValueError) as exc:
-                response = f"教材整合调用失败：{exc}\n\n已保留当前整合结果；请检查 API Key、Base URL、模型名或稍后重试。"
-        else:
-            response = handle_teacher_message(prompt, decisions)
-        st.session_state.teacher_chat_history.append({"role": "assistant", "content": response})
-        st.rerun()
 
 
 def render_textbook_source_panel() -> None:
@@ -2359,10 +2390,13 @@ def main() -> None:
         render_case_a_workspace(effective_decisions, corpus, api_key, base_url, model)
         return
 
-    render_textbook_source_panel()
-    render_teacher_feedback_workspace(effective_decisions, api_key, base_url, model)
+    render_teacher_dynamic_chat_card(effective_decisions, api_key, base_url, model)
 
-    with st.expander("3. 整合闭环证据总览", expanded=True):
+    st.markdown('<div class="static-info-stack">', unsafe_allow_html=True)
+    render_textbook_source_panel()
+    render_teacher_static_controls(effective_decisions, api_key, base_url, model)
+
+    with st.expander("3. 整合闭环证据总览", expanded=False):
         render_integration_evidence_overview(effective_decisions, corpus, decision_graph)
 
     with st.expander("3. 查看整合流程与指标", expanded=False):
@@ -2448,6 +2482,7 @@ def main() -> None:
             - `report/整合报告.md`：正式整合报告。
             """
         )
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
