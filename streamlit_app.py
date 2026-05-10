@@ -1566,6 +1566,16 @@ def render_textbook_source_panel() -> None:
         accept_multiple_files=True,
         key="case_b_textbook_uploader",
     )
+    demo_upload_text = load_text(DEMO_DIR / "quick_upload_textbook_demo.md")
+    if demo_upload_text:
+        st.download_button(
+            "下载 1 分钟演示教材素材",
+            data=demo_upload_text,
+            file_name="hacson_quick_upload_textbook_demo.md",
+            mime="text/markdown",
+            use_container_width=True,
+            help="用于快速验证上传教材 -> 整合需求 -> 文档/图谱 -> 二次反馈闭环。",
+        )
     if uploaded_files:
         parsed_chunks: list[dict] = []
         parse_notes = []
@@ -2421,6 +2431,17 @@ def main() -> None:
             ],
             index=0,
         )
+        st.divider()
+        st.header("评审入口")
+        st.markdown(
+            """
+            - [GitHub 仓库](https://github.com/FangChengDong-zju/hacson_knowledge_agent_middle)
+            - [公网部署](https://hacson-knowledge-agent.streamlit.app)
+            - [技术报告](https://github.com/FangChengDong-zju/hacson_knowledge_agent_middle/blob/main/docs/%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A.md)
+            - [评分点对照表](https://github.com/FangChengDong-zju/hacson_knowledge_agent_middle/blob/main/docs/%E8%AF%84%E5%88%86%E7%82%B9%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
+            """
+        )
+        st.caption("最快演示：下载演示教材素材并上传，输入整合需求，展开文档、图谱、决策记录，再进行一次二次反馈。")
         st.divider()
 
     if mode.startswith("资料问答"):

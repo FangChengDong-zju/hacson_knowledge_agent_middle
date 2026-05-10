@@ -6,6 +6,8 @@
 
 - GitHub 仓库：[https://github.com/FangChengDong-zju/hacson_knowledge_agent_middle](https://github.com/FangChengDong-zju/hacson_knowledge_agent_middle)
 - 公网部署：[https://hacson-knowledge-agent.streamlit.app](https://hacson-knowledge-agent.streamlit.app)
+- 技术报告：[docs/技术报告.md](docs/技术报告.md)
+- 评分点对照：[docs/评分点对照表.md](docs/评分点对照表.md)
 
 云端部署无法访问本机 `E:/textbooks`，因此页面会提示本地路径不存在。评审可以使用页面中的上传入口，或查看仓库内的小型 demo 数据、整合报告和图谱证据。本地运行时会读取已解析的 7 本教材缓存。
 
@@ -56,6 +58,8 @@
    ```
 
    云端会提示 `E:/textbooks` 不存在，这是正常现象；本地演示时该路径可用。
+
+   若评审需要快速验证云端上传流程，可点击页面中的“下载 1 分钟演示教材素材”，再把下载的 MD 文件上传回页面。
 
 4. 在底部输入框输入整合需求，例如：
 
