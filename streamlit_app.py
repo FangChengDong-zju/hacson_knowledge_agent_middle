@@ -9,6 +9,7 @@ import urllib.request
 from collections import Counter, defaultdict
 from copy import deepcopy
 from datetime import datetime
+from io import BytesIO
 from pathlib import Path
 
 import streamlit as st
@@ -691,7 +692,7 @@ def select_case_b_source_chunks(
     top_k: int = 8,
     allowed_textbooks: tuple[str, ...] | None = None,
 ) -> tuple[str, list[dict]]:
-    chunks = load_textbook_rag_chunks(str(TEXTBOOKS_PATH), chunk_size=720, overlap=120)
+    chunks = get_available_textbook_chunks(chunk_size=720, overlap=120)
     chunks = filter_chunks_by_textbooks(chunks, allowed_textbooks)
     explicit_decision = find_decision_from_message(teacher_prompt, decisions, allow_fallback=False)
     active_decision = explicit_decision if explicit_decision and not allowed_textbooks else None
@@ -1475,7 +1476,7 @@ def render_textbook_source_panel() -> None:
         if Path(source_path).exists():
             st.success(f"已定位本地教材路径：{source_path}")
         else:
-            st.warning("当前路径暂未在本机找到；如果使用已解析数据，系统仍会读取 `data/processed/textbooks.json`。")
+            st.info("云端部署无法访问本机路径，这是正常现象。可以上传文件；本地运行时会读取 `data/processed/textbooks.json`。")
 
     uploaded_files = st.file_uploader(
         "上传 PDF / TXT / MD / DOCX",
@@ -1483,9 +1484,25 @@ def render_textbook_source_panel() -> None:
         key="case_b_textbook_uploader",
     )
     if uploaded_files:
-        st.success(f"已选择 {len(uploaded_files)} 个文件。后续会进入解析与整合队列。")
+        parsed_chunks: list[dict] = []
+        parse_notes = []
+        for uploaded_file in uploaded_files:
+            content, note = extract_uploaded_text(uploaded_file)
+            chunks = build_uploaded_chunks(uploaded_file.name, content)
+            parsed_chunks.extend(chunks)
+            if note:
+                parse_notes.append(f"{uploaded_file.name}：{note}")
+        st.session_state.uploaded_textbook_chunks = parsed_chunks
+        if parsed_chunks:
+            books = sorted({chunk.get("textbook", "") for chunk in parsed_chunks})
+            st.success(f"已解析上传教材 {len(books)} 份，生成 {len(parsed_chunks)} 个可检索片段，将参与整合和问答。")
+        else:
+            st.warning("已收到上传文件，但暂未提取到足够文本。请尝试 TXT / MD，或使用可复制文本的 PDF。")
+        for note in parse_notes[:3]:
+            st.caption(note)
     else:
         st.caption("未上传文件时，系统会使用本地已解析教材数据作为当前教材来源。")
+        st.session_state.uploaded_textbook_chunks = st.session_state.get("uploaded_textbook_chunks", [])
 
     summary = summarize_processed_textbooks()
     if summary["textbook_count"]:
@@ -1498,7 +1515,11 @@ def render_textbook_source_panel() -> None:
         )
         st.caption("当前可用教材：" + "、".join(summary["titles"]))
     else:
-        st.warning("尚未检测到已解析教材数据。请先上传教材或确认本地路径可用。")
+        uploaded_count = len(get_uploaded_rag_chunks())
+        if uploaded_count:
+            st.success(f"当前云端会使用上传文件生成的 {uploaded_count} 个教材片段。")
+        else:
+            st.info("云端当前未检测到本地解析缓存。请上传教材文件，或查看 demo 整合文档、图谱和评分证据。")
 
 
 def render_integration_evidence_overview(decisions: list[dict], corpus: dict, decision_graph: dict) -> None:
@@ -1706,6 +1727,74 @@ def estimate_chunk_page(page_start: int, page_end: int, chunk_start: int, conten
         return page_start
     ratio = min(max(chunk_start / content_length, 0), 1)
     return int(round(page_start + ratio * (page_end - page_start)))
+
+
+def build_uploaded_chunks(filename: str, content: str, chunk_size: int = 760, overlap: int = 120) -> list[dict]:
+    raw_content = compact_text(content)
+    if len(raw_content) < 80:
+        return []
+    stem = Path(filename).stem or "uploaded_textbook"
+    step = max(chunk_size - overlap, 200)
+    chunks: list[dict] = []
+    for start in range(0, len(raw_content), step):
+        text = raw_content[start : start + chunk_size]
+        if len(text) < 80:
+            continue
+        chunk_index = len(chunks) + 1
+        chunks.append(
+            {
+                "chunk_id": f"uploaded::{stem}::{start}",
+                "textbook": stem,
+                "filename": filename,
+                "chapter": f"Uploaded segment {chunk_index}",
+                "page_start": chunk_index,
+                "page_end": chunk_index,
+                "page_range": f"上传片段 {chunk_index}",
+                "text": text,
+                "source_label": f"{stem}｜上传片段 {chunk_index}",
+            }
+        )
+    return chunks
+
+
+def extract_uploaded_text(uploaded_file) -> tuple[str, str]:
+    filename = uploaded_file.name
+    suffix = Path(filename).suffix.lower()
+    data = uploaded_file.getvalue()
+    if suffix in {".txt", ".md", ".markdown"}:
+        for encoding in ("utf-8-sig", "utf-8", "gb18030"):
+            try:
+                return data.decode(encoding), ""
+            except UnicodeDecodeError:
+                continue
+        return data.decode("utf-8", errors="ignore"), "文本编码无法完全识别，已用容错方式读取。"
+    if suffix == ".pdf":
+        try:
+            from pypdf import PdfReader
+
+            reader = PdfReader(BytesIO(data))
+            pages = [page.extract_text() or "" for page in reader.pages[:80]]
+            return "\n".join(pages), "PDF 已解析前 80 页用于云端演示；完整长教材建议本地解析。"
+        except Exception as exc:
+            return "", f"PDF 解析失败：{exc}"
+    if suffix == ".docx":
+        try:
+            from docx import Document
+
+            document = Document(BytesIO(data))
+            return "\n".join(paragraph.text for paragraph in document.paragraphs), ""
+        except Exception as exc:
+            return "", f"DOCX 解析失败：{exc}"
+    return "", "暂不支持该文件格式。"
+
+
+def get_uploaded_rag_chunks() -> list[dict]:
+    return list(st.session_state.get("uploaded_textbook_chunks", []))
+
+
+def get_available_textbook_chunks(chunk_size: int = 760, overlap: int = 120) -> list[dict]:
+    processed_chunks = load_textbook_rag_chunks(str(TEXTBOOKS_PATH), chunk_size=chunk_size, overlap=overlap)
+    return processed_chunks + get_uploaded_rag_chunks()
 
 
 @st.cache_data(show_spinner=False)
@@ -2109,7 +2198,7 @@ def handle_case_a_message(query: str, decisions: list[dict], corpus: dict, api_k
     else:
         results, local_status = [], "agent_kb_missed"
 
-    textbook_chunks = load_textbook_rag_chunks(str(TEXTBOOKS_PATH))
+    textbook_chunks = get_available_textbook_chunks()
     rag_results, rag_status = search_textbook_chunks(query, textbook_chunks)
     if rag_status == "answered_by_textbook_rag":
         return build_textbook_rag_answer(query, rag_results, api_key, base_url, model)
@@ -2120,7 +2209,7 @@ def handle_case_a_message(query: str, decisions: list[dict], corpus: dict, api_k
 def render_case_a_workspace(decisions: list[dict], corpus: dict, api_key: str, base_url: str, model: str) -> None:
     ensure_case_a_state()
     items = build_agent_knowledge_items(decisions, corpus)
-    textbook_chunks = load_textbook_rag_chunks(str(TEXTBOOKS_PATH))
+    textbook_chunks = get_available_textbook_chunks()
     st.markdown(
         """
         <div class="chat-focus">
